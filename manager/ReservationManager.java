@@ -16,7 +16,7 @@ public class ReservationManager {
 
     public Reservation createReservation(Vehicle vehicle, ParkingSpot spot, LocalDateTime starTime, LocalDateTime endTime){
         for(Reservation r: reservations.values()){
-            if(r.isActive(starTime) || r.isActive(endTime)){
+            if(r.getParkingSpot().equals(spot) && (r.isActive(starTime) || r.isActive(endTime))){
                 throw new IllegalStateException("Spot is not available for reservation");
             }
         }
@@ -34,4 +34,10 @@ public class ReservationManager {
             reservations.remove(reservation.getReservationID());
         }
     }
+
+    @Override
+    public String toString() {
+        return "ReservationManager [reservations=" + reservations + "]";
+    }
+    
 }

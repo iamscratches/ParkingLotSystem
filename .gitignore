@@ -1,0 +1,4 @@
+# Git Ignore File
+
+# Ignore all .class files
+*.class

@@ -15,6 +15,30 @@ public class ParkingLotManager {
         this.parkingFeeCalculator = parkingFeeCalculator;
     }
 
+    public List<ParkingLevel> getLevels() {
+        return levels;
+    }
+
+
+
+    public void setLevels(List<ParkingLevel> levels) {
+        this.levels = levels;
+    }
+
+
+
+    public ParkingFeeCalculator getParkingFeeCalculator() {
+        return parkingFeeCalculator;
+    }
+
+
+
+    public void setParkingFeeCalculator(ParkingFeeCalculator parkingFeeCalculator) {
+        this.parkingFeeCalculator = parkingFeeCalculator;
+    }
+
+
+
     public ParkingSpot allocateSpot(Vehicle vehicle){
         ParkingSpot spot;
         for(ParkingLevel parkingLevel: levels){
