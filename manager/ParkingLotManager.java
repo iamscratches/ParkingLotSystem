@@ -3,7 +3,7 @@ package manager;
 import java.util.*;
 
 import model.ParkingLevel;
-import model.ParkingSpot;
+import model.spot.ParkingSpot;
 import model.vehicle.Vehicle;
 import util.ParkingFeeCalculator;
 

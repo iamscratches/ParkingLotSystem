@@ -1,7 +1,6 @@
-package model;
+package model.spot;
 
-import java.time.LocalDateTime;
-import java.util.*;
+
 
 import model.vehicle.Vehicle;
 

@@ -2,6 +2,7 @@ package model;
 
 import java.util.*;
 
+import model.spot.ParkingSpot;
 import model.vehicle.Vehicle;
 public class ParkingLevel {
     private int levelID;
@@ -17,6 +18,10 @@ public class ParkingLevel {
             }
         }
         return null;
+    }
+    @Override
+    public String toString() {
+        return "ParkingLevel [levelID=" + levelID + ", spots=" + spots + "]";
     }
 
 }

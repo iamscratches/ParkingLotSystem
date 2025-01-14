@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
+import model.spot.ParkingSpot;
 import model.vehicle.Vehicle;
 
 public class Reservation {

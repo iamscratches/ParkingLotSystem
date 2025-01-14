@@ -3,8 +3,8 @@ package manager;
 import java.time.LocalDateTime;
 import java.util.*;
 
-import model.ParkingSpot;
 import model.Reservation;
+import model.spot.ParkingSpot;
 import model.vehicle.Vehicle;
 
 public class ReservationManager {

@@ -1,6 +1,5 @@
 package model.spot;
 
-import model.ParkingSpot;
 import model.VehicleType;
 import model.vehicle.Vehicle;
 
