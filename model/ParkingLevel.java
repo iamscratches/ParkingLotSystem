@@ -11,6 +11,23 @@ public class ParkingLevel {
         this.levelID = levelID;
         this.spots = spots;
     }
+    
+    public int getLevelID() {
+        return levelID;
+    }
+
+    public void setLevelID(int levelID) {
+        this.levelID = levelID;
+    }
+
+    public List<ParkingSpot> getSpots() {
+        return spots;
+    }
+
+    public void setSpots(List<ParkingSpot> spots) {
+        this.spots = spots;
+    }
+
     public ParkingSpot findAvailableSpot(Vehicle vehicle){
         for(ParkingSpot spot: spots){
             if(spot.isAvailable() && spot.canFitVehicle(vehicle)){

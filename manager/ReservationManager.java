@@ -17,10 +17,10 @@ public class ReservationManager {
     public Reservation createReservation(Vehicle vehicle, ParkingSpot spot, LocalDateTime starTime, LocalDateTime endTime){
         for(Reservation r: reservations.values()){
             if(r.getParkingSpot().equals(spot) && (r.isActive(starTime) || r.isActive(endTime))){
-                throw new IllegalStateException("Spot is not available for reservation");
+                throw new IllegalStateException("Time conflict: Spot is not available for reservation");
             }
         }
-        if(spot.isAvailable()){
+        if(!spot.isAvailable()){
             throw new IllegalStateException("Spot is not available for reservation");
         }
         String reservationID = "RES-"+System.currentTimeMillis();
